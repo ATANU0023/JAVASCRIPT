@@ -7,7 +7,8 @@ const roll = 23
 /*
 
 console.log(`helo my name is ${name} and my age is ${age}
- and roll is ${roll} `);  // It's called string interpolation
+ and roll is ${roll} `);  // It's called string interpolation #suggest to write code in this way.
+ 
 
 //another way to declare string
 const gameName = new String('atanufootball'); //copy this and run on browser console
@@ -32,6 +33,24 @@ console.log(anotherString)
 const anotherNewString = "       atanu     ";
 console.log(anotherNewString)
 console.log(anotherNewString.trim());
+
+
+const url = "https://atanu.com/atanu%20pramanik"
+console.log(url.replace("%20", "-"))
+
+//you can ask whether a particular value is present in the string or not example
+
+console.log(url.includes("atanu")) //output => ture;
+console.log(url.includes("payel")) //output => false;
+
+// split and store in an array 
+// here we doing the split based on "-"
+
+const gamer = "atanu-rocky-sallar-javascript"
+console.log(gamer.split("-"))  //output => [ 'atanu', 'rocky', 'sallar', 'javascript' ]
+
+
+
 
 // [[Prototype]] //################## methods go though them ############################################
 // : 
