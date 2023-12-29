@@ -1,0 +1,56 @@
+html{
+    margin: 0;
+}
+
+span{
+    display: block;
+}
+
+.canvas{
+    margin: 100px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.button{
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+}
+#gray{
+    background: gray;
+}
+#white{
+    background: white;
+}
+#blue{
+    background: blue;
+}
+#green{
+    background: green;
+}
+#black{
+    background-color: black ;
+}
+#pink{
+    background-color: pink;
+}
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#purple{
+    background-color: purple;
+}
+#indigo{
+    background-color: indigo;
+}
+#orange{
+    background-color: orange;
+}
+#maroon{
+    background-color: maroon;
+}
