@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>javascript with fun</h1>
+    <button id="start">start</button>
+    <button id="stop">Stop</button>
+    <h3 id="go">HERE I GO </h3>
+</body>
+<script>
+    const print = document.querySelector('#go').innerHTML
+    console.log(print)
+
+    let interValId;
+
+    const sayDate = function () {
+        console.log("ATANU", Date.now())
+    }
+    //setInterval(sayDate,2000);
+    //const interValId = setInterval(sayDate,1000, "hello")  //you can pass paremeter also.
+    //clearInterval(interValId)
+    //clearInterval(sayDate)
+    const textChange = function () {
+        document.querySelector('h3').innerHTML = "ATANU PRAMANIK";
+    }
+
+    document.querySelector('#start').addEventListener('click', function () {
+        if(!interValId){
+            interValId = setInterval(textChange, 2000)
+        }
+        console.log("started");
+
+    }, false)
+
+    document.querySelector('#stop').addEventListener('click', function () {
+            clearInterval(interValId)
+            console.log("stopped");
+            document.querySelector('h3').innerHTML = print
+            interValId = null;
+        },false)
+
+
+
+
+
+</script>
+
+</html>
